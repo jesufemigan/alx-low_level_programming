@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S hey.c
+gcc -S $CFILE 

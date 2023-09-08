@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+/**
+ * main - Entry Point
+ *
+ * Return: always return 0
+ */
+
+int main(void)
+{
+	int n;
+
+	n = 0;
+
+	while (n <= 16)
+	{
+		if (n <= 9)
+		{
+			putchar('0' + n);
+		} else if (n > 9)
+		{
+			putchar('A' + n);
+		}
+		n++;
+	}
+	putchar('\n');
+	return (0);
+}

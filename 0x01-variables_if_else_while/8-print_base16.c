@@ -12,7 +12,7 @@ int main(void)
 
 	n = 0;
 
-	while (n <= 16)
+	while (n < 16)
 	{
 		if (n <= 9)
 		{

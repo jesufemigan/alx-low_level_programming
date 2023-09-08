@@ -19,7 +19,7 @@ int main(void)
 			putchar('0' + n);
 		} else if (n > 9)
 		{
-			putchar('A' + n);
+			putchar('a' + (n - 10));
 		}
 		n++;
 	}

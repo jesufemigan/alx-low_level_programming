@@ -2,8 +2,9 @@
 
 /**
  * add - add two integers
- * @num1: first number to add
- * @num2: second number to dd
+ *
+ * @n: first number to add
+ * @m: second number to dd
  *
  * Return: value of num1+num2
  */

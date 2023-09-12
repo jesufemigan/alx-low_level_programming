@@ -23,11 +23,8 @@ int main(void)
 	{
 		next = n + m;
 		printf("%lu", next);
-		
 		n = m;
-		
 		m = next;
-
 		if (total != 49)
 		{
 			printf(", ");
@@ -38,6 +35,5 @@ int main(void)
 
 		total++;
 	}
-	printf("\n");
 	return (0);
 }

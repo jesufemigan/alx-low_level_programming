@@ -26,9 +26,8 @@ void times_table(void)
 
 				if (m != 9)
 				{
-					_putchar(' ');
-					_putchar(' ');
 					_putchar(',');
+					_putchar(' ');
 				}
 			} else
 			{
@@ -36,9 +35,9 @@ void times_table(void)
 				_putchar((product % 10) + '0');
 				if (m != 9)
 				{
-					_putchar(' ');
 					_putchar(',');
-				}	
+					_putchar(' ');
+				}
 			}
 			m++;
 		}

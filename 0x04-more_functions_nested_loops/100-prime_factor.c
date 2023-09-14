@@ -41,5 +41,5 @@ void largest_prime_factor(long n)
 	{
 		largest = n;
 	}
-	printf("%d", largest);
+	printf("%d\n", largest);
 }

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void largest_prime_factor(int n);
+void largest_prime_factor(long n);
 
 /**
  * main - entry point
@@ -19,7 +19,7 @@ int main(void)
  * Return: void
  */
 
-void largest_prime_factor(int n)
+void largest_prime_factor(long n)
 {
 	int i;
 	int largest;

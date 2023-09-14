@@ -12,6 +12,11 @@ void print_triangle(int size)
 	int shape;
 	int count;
 
+	if (size <= 0)
+	{
+		_putchar('\n');
+	}
+
 	for (row = 1; row <= size; row++)
 	{
 		for (shape = 1; shape <= size - row ; shape++)

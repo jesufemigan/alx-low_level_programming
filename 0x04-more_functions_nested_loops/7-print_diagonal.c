@@ -19,11 +19,11 @@ void print_diagonal(int n)
 	{
 		start = 1;
 
-		while (start < n)
+		while (start <= n)
 		{
 			pos = 1;
 
-			while (pos < start)
+			while (pos <= start)
 			{
 				_putchar(' ');
 				pos++;

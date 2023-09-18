@@ -2,7 +2,7 @@
 
 /**
  * print_rev - prints a string in reverse
- * @str: string to print
+ * @s: string to print
  * Return: void
  */
 

@@ -45,12 +45,13 @@ char *cap_string(char *str)
 		{
 			capitalize = 1;
 		}
-		else if (capitalize && ((*str >= 'a' && *str <= 'z') || (*str >= 'A' && *str <= 'Z')))
+		else if (capitalize && ((*str >= 'a' && *str <= 'z'))) 
 		{
-			if (*str >= 'a' && *str <= 'z')
-			{
-				*str -= ('a' - 'A');
-			}
+			*str -= ('a' - 'A');
+			capitalize = 0;
+		}
+		else
+		{
 			capitalize = 0;
 		}
 		str++;

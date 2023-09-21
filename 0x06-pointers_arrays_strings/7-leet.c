@@ -16,7 +16,7 @@ char *leet(char *str)
 	while (*str)
 	{
 		char letters[] = "aAeEoOtTlL";
-		char code[] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '7', '\0'};
+		char code[] = "4433007717";
 		int i;
 
 		for (i = 0; letters[i] != '\0'; i++)

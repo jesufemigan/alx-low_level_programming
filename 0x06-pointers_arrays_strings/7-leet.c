@@ -15,32 +15,26 @@ char *leet(char *str)
 
 	while (*str)
 	{
-		if (*str == 'a' || *str == 'A')
-		{
-			*str = '4';
-		}
-		else if (*str == 'e' || *str == 'E')
-		{
-			*str = '3';
-		}
-		else if (*str == 'o' || *str == 'O')
-		{
-			*str = '0';
-		}
-		else if (*str == 't' || *str == 'T')
-		{
-			*str = '7';
-		}
-		else if (*str == 'l' || *str == 'L')
-		{
-			*str = '1';
-		}
-		else
-		{
-			*str = *str;
-		}
-		str++;
+		char letters[] = "aAeEoOtTlL";
+		char code[] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '7', '\0'};
+		int i, found;
 
+		found = 0;
+
+		for (i = 0; letters[i] != '\0'; i++)
+		{
+			if (*str == letters[i])
+			{
+				*str = code[i];
+				found = 1;
+				break;
+			}
+		}
+
+		if (!found)
+		{
+			str++;
+		}
 	}
 	return (new_string);
 }

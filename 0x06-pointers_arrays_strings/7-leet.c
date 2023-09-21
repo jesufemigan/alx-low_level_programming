@@ -17,24 +17,18 @@ char *leet(char *str)
 	{
 		char letters[] = "aAeEoOtTlL";
 		char code[] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '7', '\0'};
-		int i, found;
-
-		found = 0;
+		int i;
 
 		for (i = 0; letters[i] != '\0'; i++)
 		{
 			if (*str == letters[i])
 			{
 				*str = code[i];
-				found = 1;
 				break;
 			}
 		}
 
-		if (!found)
-		{
-			str++;
-		}
+		str++;
 	}
 	return (new_string);
 }

@@ -45,8 +45,7 @@ char *cap_string(char *str)
 		{
 			capitalize = 1;
 		}
-		else if (capitalize && ((*str >= 'a' && *str <= 'z') || (*str >=
-						'A' && *str <= 'Z')))
+		else if (capitalize && ((*str >= 'a' && *str <= 'z') || (*str >= 'A' && *str <= 'Z')))
 		{
 			if (*str >= 'a' && *str <= 'z')
 			{

@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * leet - fucntion that encodes a string 
+ * leet - fucntion that encodes a string
  * @str: string to encode
  *
  * Return: char

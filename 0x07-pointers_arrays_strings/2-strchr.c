@@ -11,26 +11,17 @@
 
 char *_strchr(char *s, char c)
 {
-	int found = 0;
+	int i;
 
-	while (*s && !found)
+	i = 0;
+
+	while (s[i] >= '\0')
 	{
-		if (c == *s)
+		if (*s == c)
 		{
-			found = 1;
+			return (s + i);
 		}
-		else
-		{
-			found = 0;
-		}
-		if (found)
-		{
-			return (s);
-		}
-		else
-		{
-			s++;
-		}
+		i++;
 	}
-	return (0);
+	return ('\0');
 }

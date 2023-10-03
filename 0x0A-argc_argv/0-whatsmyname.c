@@ -4,7 +4,7 @@
  * main - entry point
  *
  * @argc: argument count
- * @argv[]: vector
+ * @argv: vector
  *
  * Return: int
  */

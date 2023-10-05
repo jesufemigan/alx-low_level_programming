@@ -2,17 +2,17 @@
 #include <stdlib.h>
 #include "main.h"
 
-int strlen(char *s);
+int _strlen(char *s);
 
 /**
- * strlen - get length of a string
+ * _strlen - get length of a string
  *
  * @s: string
  *
  * Return: int
  */
 
-int strlen(char *s)
+int _strlen(char *s)
 {
 	int n;
 
@@ -44,8 +44,8 @@ char *str_concat(char *s1, char *s2)
 
 	if (s2 == NULL)
 		s2 = "";
-	size1 = strlen(s1);
-	size2 = strlen(s2);
+	size1 = _strlen(s1);
+	size2 = _strlen(s2);
 
 	new_string = malloc((size1 + size2) * sizeof(char) + 1);
 
@@ -57,7 +57,7 @@ char *str_concat(char *s1, char *s2)
 		if (i < size1)
 			new_string[i] = s1[i];
 		else
-			new_string[i] = s[i - size1];
+			new_string[i] = s2[i - size1];
 	}
 	new_string[i] = '\0';
 

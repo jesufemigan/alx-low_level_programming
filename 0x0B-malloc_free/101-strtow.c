@@ -26,7 +26,7 @@ int wrdcnt(char *s)
 			n++;
 	}
 	n++;
-	return (0);
+	return (n);
 }
 
 /**
@@ -37,7 +37,7 @@ int wrdcnt(char *s)
  * Return: pointer to array
  */
 
-char *strtow(char *str)
+char **strtow(char *str)
 {
 	int i, j, k, l, n = 0, wc = 0;
 	char **w;
@@ -54,7 +54,7 @@ char *strtow(char *str)
 	i = 0;
 	while (str[i])
 	{
-		if (str[i] != ' ' && (i == 0 || str(i - 1) == ' '))
+		if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
 		{
 			for (j = 1; str[i + j] != ' ' && str[i + j]; j++)
 				;

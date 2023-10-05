@@ -37,10 +37,8 @@ int _strlen(char *s)
 
 char *argstostr(int ac, char **av)
 {
-	int nc, i, j, ni;
+	int nc = 0, i = 0, j = 0, ni = 0;
 	char *new_string;
-
-	i = 0;
 
 	for (; i < ac; i++, nc++)
 	{

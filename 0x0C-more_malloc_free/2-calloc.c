@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 
-int _memset(char *s, char b, unsigned int n);
+char *_memset(char *s, char b, unsigned int n);
 
 /**
  * _memset - set memory to 0
@@ -13,7 +13,7 @@ int _memset(char *s, char b, unsigned int n);
  * Return: int
  */
 
-int _memset(char *s, char b, unsigned int n)
+char _memset(char *s, char b, unsigned int n)
 {
 	char *ptr;
 

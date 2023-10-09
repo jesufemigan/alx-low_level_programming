@@ -37,7 +37,7 @@ int _memset(char *s, char b, unsigned int n)
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *m;
+	void *m;
 
 	m = malloc(sizeof(int) * nmemb);
 

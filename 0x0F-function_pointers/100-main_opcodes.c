@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
 {
 	int b;
 	char *p = (char *)main;
+
 	b = atoi(argv[1]);
 
 	if (argc != 2)

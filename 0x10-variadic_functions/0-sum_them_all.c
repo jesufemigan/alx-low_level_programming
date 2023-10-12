@@ -8,7 +8,7 @@
  * Return: int
  */
 
-int sum_them_all(unsigned int n, ...)
+int sum_them_all(const unsigned int n, ...)
 {
 	unsigned int i, num, sum = 0;
 

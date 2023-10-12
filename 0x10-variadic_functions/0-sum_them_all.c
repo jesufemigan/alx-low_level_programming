@@ -1,31 +1,27 @@
-#include <stdargs.h>
+#include <stdarg.h>
 #include <stdio.h>
 
 /**
- * sum_them-all - sum all of its parentheses
- * 
+ * sum_them_all - sums all the parameters
+ *
  * @n: number of arguments
- * 
  * Return: int
-*/
+ */
 
-int sum_them_all(const unsigned int n, ...)
+int sum_them_all(unsigned int n, ...)
 {
-        va_list nums;
+	unsigned int i, num, sum = 0;
 
-        int sums = 0;
-        int i;
+	va_list nums;
 
-        if (n == 0)
-                return (0);
-        
-        va_start(nums, n);
+	if (n == 0)
+		return (0);
+	va_start(nums, n);
 
-        for (i = 0; i < n; i++)
-        {
-                num = va_args(nums, int);
-                sum += num;
-        }
-        va_end(num);
-        return (sum);
+	for (i = 0; i < n; i++)
+	{
+		num = va_arg(nums, int);
+		sum += num;
+	}
+	return (sum);
 }

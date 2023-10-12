@@ -17,7 +17,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list words;
 
 	va_start(words, n);
-	if (separator)
+	if (separator && separator[0])
 	{
 		for (i = 0; i < n; i++)
 		{

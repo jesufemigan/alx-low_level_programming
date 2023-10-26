@@ -10,18 +10,20 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned long int track = 1UL << (sizeof(n) * CHAR_BIT - 1);
+	unsigned long int ibit = sizeof(n) * 8, printed = 0;
 
-	while (track > 0)
+	while (ibit)
 	{
-		if ((n & track) == 0)
+		if (n & 1L << --ibit)
+		{
+			_putchar('1');
+			printed++;
+		}
+		else if (printed)
 		{
 			_putchar('0');
 		}
-		else
-		{
-			_putchar('1');
-		}
-		track >>= 1;
 	}
+	if (!printed)
+		_putchar('0');
 }

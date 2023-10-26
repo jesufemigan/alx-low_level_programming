@@ -12,7 +12,7 @@ void print_binary(unsigned long int n)
 {
 	unsigned long int track = 1UL << (sizeof(n) * CHAR_BIT - 1);
 
-	while (track)
+	while (track > 0)
 	{
 		if ((n & track) == 0)
 		{

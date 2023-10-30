@@ -10,7 +10,7 @@
  *
  */
 
-ssize_t read_textfile(const char *filename, ssize_t letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char buf[BUF_SIZE * 8];
 	ssize_t bytes;

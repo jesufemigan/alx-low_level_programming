@@ -3,7 +3,7 @@
 #define READ_ERROR "Error: Can't read from file %s\n"
 #define WRITE_ERROR "Error: Can't write to %s\n"
 #define CLOSE_ERROR "Error: Can't close fd %d\n"
-#define ARG_ERROR "Usage: cp file_from file_to"
+#define ARG_ERROR "Usage: cp file_from file_to\n"
 
 /**
  * main - entry point

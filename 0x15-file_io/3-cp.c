@@ -37,8 +37,8 @@ int main(int argc, char **argv)
 	fd2 = close(fd2);
 
 	if (fd1)
-		dprintf(STDERR_FILENO, CLOSE_ERROR, argv[1]), exit(100);
+		dprintf(STDERR_FILENO, CLOSE_ERROR, fd1), exit(100);
 	if (fd2)
-		dprintf(STDERR_FILENO, CLOSE_ERROR, argv[2]), exit(100);
+		dprintf(STDERR_FILENO, CLOSE_ERROR, fd2), exit(100);
 	return (EXIT_SUCCESS);
 }
